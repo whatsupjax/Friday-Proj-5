@@ -21,12 +21,14 @@ for row in questionBank:
     print(question)
     user_answer = input('ANSWER: ')
 
-if user_answer() == answer():
-    print('That is correct!')
-    correct += 1
+    if user_answer.lower() == answer.lower():
+        print('That is correct!')
+        correct += 1
 
-else:
-    print('That is incorrect!')
-    incorrect += 1
+    else:
+        print('That is incorrect!')
+        incorrect += 1
 
 print('Final results:', correct, "/", incorrect)
+
+connection.close
